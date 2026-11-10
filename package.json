@@ -1,0 +1,23 @@
+{
+  "name": "dsh-browser-desktop",
+  "version": "0.1.0",
+  "description": "Private authenticated noVNC browser desktop in the DSH sidebar",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": ["index.js", "client.js", "assets", "cordis.patch.yml", "README.md"],
+  "dsh": {
+    "bundle": {"patch": "./cordis.patch.yml"},
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-ui-layout", "@deepseek-ai/dsh-client-ui-sidebar"]
+    }
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

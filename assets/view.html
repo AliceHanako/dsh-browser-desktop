@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>浏览器桌面 · DSH</title><link rel="stylesheet" href="./view.css"></head>
+<body>
+<header>
+ <div class="title">浏览器桌面 <span id="status" role="status">准备连接…</span></div>
+ <div class="controls"><button id="connect" type="button">重连</button><button id="disconnect" type="button">断开</button><button id="fit" type="button">原始大小</button><button id="fullscreen" type="button">全屏</button></div>
+ <form id="open-form"><input id="url" type="url" placeholder="https://… 在服务器 Chrome 中打开" aria-label="网页地址" required><button type="submit">打开网页</button><button id="moodboard" type="button">心情看板</button></form>
+ <div class="notice">这是服务器 :99 的真实桌面，可操作 Chrome、扫码和验证；关闭此页不会退出浏览器。仅限本人使用，请勿分享 DSH 登录凭据。</div>
+</header>
+<main id="desktop" data-connected="false"></main>
+<script type="module" src="./view.js"></script>
+</body></html>

@@ -1,0 +1,19 @@
+# Local dependencies and operating-system files
+node_modules/
+.DS_Store
+*.log
+__pycache__/
+*.pyc
+
+# Credentials and live browser state must never be committed
+.env
+.env.*
+!.env.example
+session.json
+vnc.pass
+chrome-profile/
+*.pem
+*.key
+*.p12
+*.pfx
+screenshots/
